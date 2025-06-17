@@ -1,0 +1,123 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte e fundo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #222;
+  line-height: 1.6;
+  padding-top: 60px; /* Espaço para menu fixo */
+}
+
+/* Menu fixo no topo */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  border-bottom: 3px solid #ff6600;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 0;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ff6600;
+}
+
+/* Container principal */
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+/* Títulos */
+h1, h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Parágrafos */
+p {
+  margin-bottom: 15px;
+}
+
+/* Formulário da página contato */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #cc5200;
+}
+
+/* Links do portfólio */
+.portfolio-list a {
+  display: block;
+  margin-bottom: 10px;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.portfolio-list a:hover {
+  text-decoration: underline;
+}
